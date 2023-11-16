@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 600vh;
+}
+.imges-fixed{
+    background-image: url(../imges/pexels-leonie-fahjen-92866.jpg);
+    background-size: cover;
+    height: 300px;
+    background-attachment: fixed;
+}
+
+.totel{
+    position: relative;
+    margin-left: 100px;
+}
+
+.div1{
+    background: rgb(173, 193, 120);
+    margin-bottom: 25px;
+}
+
+.cardover::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgb(214, 207, 203);
+    opacity: 0.3;
+    transition: 1s;
+}
+.cardover:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.cardover::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: rgb(214, 207, 203);
+    opacity: 0.3;
+    transition: 1s;
+}
+.cardover:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.item-tow{
+    transform: scaley(1);
+}
+.item-tow:hover{
+    transform: scaley(1.1);
+}
+.logoicon {
+    height: 80px;
+    width: 80px;
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+    border-radius: 50%;
+    transition: 1s;
+}
+
+
